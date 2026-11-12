@@ -12,6 +12,23 @@
 
 Troque uma cor em `palette.json`, rode `build`, e todas as páginas que usam `var(--token)` se atualizam. Sem caça a códigos hex espalhados.
 
+## ⚡ Início rápido
+
+```bash
+# 1. Instalar (menu interativo; marque Claude Code, Antigravity, Cursor...)
+npx omni-color-skill install
+
+# ou direto do GitHub, sem menu:
+npx github:LimaEdu-7x/omni-color install all
+
+# 2. Reinicie a IA e use o comando
+/color paleta para uma loja de café --brand #7a4a2b --dark
+/color --check          # contraste WCAG da paleta atual
+/color --build          # regenera theme.css depois de mudar uma cor
+```
+
+O comando `/color` aceita `--brand`, `--adopt`, `--check`, `--build`, `--dark` e `--sites` (detalhes em [Comandos & Modos de Uso](#-comandos--modos-de-uso)). O que você não informar, a IA pergunta. O pacote npm se chama `omni-color-skill`; a skill instalada é `omni-color`.
+
 ![Saída de exemplo de `init --brand "#3b82f6"`: sete rampas OKLCH de 11 degraus (primária, acento, neutra, sucesso, aviso, perigo, info), seguidas dos tokens semânticos dos modos claro e escuro](docs/palette-example.png)
 
 *Gerada por `omni_color.py init --brand "#3b82f6"` + `build`. Linhas 1–7: primária, acento (complemento automático), neutra com tom da marca, sucesso, aviso, perigo e info — degraus 50 → 950. As duas faixas de baixo: tokens semânticos dos modos claro e escuro (bg, surface, border, text, text-muted, primary, primary-hover, on-primary, accent, on-accent, ring e cores de status).*
@@ -123,11 +140,11 @@ npx omni-color-skill install
 ```text
 🎨 OmniColor Installer
 ? Em quais IAs você deseja instalar a OmniColor? (Espaço: marcar/desmarcar | Enter: confirmar)
- ❯ [✓] 🪐 Antigravity / Gemini CLI (~/.gemini/config/skills/color)
-   [✓] 🟣 Claude Code (~/.claude/skills/color)
-   [ ] ⚡ Cursor IDE (.cursor/skills/color + .cursor/rules/color.mdc)
-   [ ] 🌊 Windsurf (.windsurf/skills/color + .windsurfrules)
-   [ ] 📁 Projeto Local (./color/)
+ ❯ [✓] 🪐 Antigravity / Gemini CLI (~/.gemini/config/skills/omni-color)
+   [✓] 🟣 Claude Code (~/.claude/skills/omni-color)
+   [ ] ⚡ Cursor IDE (.cursor/skills/omni-color + .cursor/rules/omni-color.mdc)
+   [ ] 🌊 Windsurf (.windsurf/skills/omni-color + .windsurfrules)
+   [ ] 📁 Projeto Local (./omni-color/)
 ```
 
 O instalador copia `SKILL.md`, `references/` e `scripts/` e instala junto a skill **`grill-me`** (de Matt Pocock, MIT; se você já tiver uma, a sua é mantida).
@@ -155,12 +172,12 @@ npx omni-color-skill doctor
 git clone https://github.com/LimaEdu-7x/omni-color.git && cd omni-color
 
 # Claude Code
-mkdir -p ~/.claude/skills/color ~/.claude/skills/grill-me
-cp -r SKILL.md references scripts ~/.claude/skills/color/ && cp -r bundled/grill-me/. ~/.claude/skills/grill-me/
+mkdir -p ~/.claude/skills/omni-color ~/.claude/skills/grill-me
+cp -r SKILL.md references scripts ~/.claude/skills/omni-color/ && cp -r bundled/grill-me/. ~/.claude/skills/grill-me/
 
 # Antigravity / Gemini CLI
-mkdir -p ~/.gemini/config/skills/color ~/.gemini/config/skills/grill-me
-cp -r SKILL.md references scripts ~/.gemini/config/skills/color/ && cp -r bundled/grill-me/. ~/.gemini/config/skills/grill-me/
+mkdir -p ~/.gemini/config/skills/omni-color ~/.gemini/config/skills/grill-me
+cp -r SKILL.md references scripts ~/.gemini/config/skills/omni-color/ && cp -r bundled/grill-me/. ~/.gemini/config/skills/grill-me/
 ```
 Requisitos: Node 16.7+ (para o `npx`) e Python 3 (só biblioteca padrão) para rodar o script; se faltar, a IA pergunta antes de instalar. Verifique: `python scripts/omni_color.py selftest`.
 
