@@ -16,12 +16,12 @@
 | Skill | Papel na omni-color |
 |---|---|
 | **impeccable** (skill de design/polimento/auditoria de UI, ex.: `impeccable-craft`) | Depois de construir a paleta: rode a crítica/auditoria/polimento nas páginas que consomem os tokens; use para tipografia, hierarquia, estados, casos vazios/extremos e para escrever o `DESIGN.md` que documenta os tokens |
-| **grill-me** (incluída neste repositório, de Matt Pocock, MIT) | Conduz a entrevista de `questions.md`: rodadas de perguntas independentes, cada uma com resposta recomendada, até esgotar a árvore de decisões |
+| **grill-me** (instalada junto, de Matt Pocock, MIT) | Conduz a entrevista de `questions.md`: rodadas de perguntas independentes, cada uma com resposta recomendada, até esgotar a árvore de decisões |
 | frontend-design / skills de estilo "taste" | Escolher a direção estética *antes* da paleta (humor, densidade) |
 | accessibility-review / web-design-guidelines | Auditoria final de contraste, anel de foco e significado só por cor |
 | design-system / design-handoff | Exportar tokens para um documento de design system ou passar para desenvolvedores |
 | dataviz | Gráficos precisam das próprias paletas categóricas/sequenciais validadas |
-| **omni-sprite** | `build --hex palette.hex` → importar no Aseprite para pixel art combinando com o site |
+| **`/sprite`** (omni-sprite) | `build --hex palette.hex` → importar no Aseprite para pixel art combinando com o site |
 | skills de tokens/ui-craft (ex.: extratores de design tokens) | Semear o `palette.json` com os estilos computados de um site ao vivo |
 
 Se uma companheira não existir, faça a etapa dela você mesmo com o checklist do `SKILL.md`; nunca trave por causa disso.

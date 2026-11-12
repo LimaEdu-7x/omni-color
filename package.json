@@ -1,0 +1,56 @@
+{
+  "name": "omni-color-skill",
+  "version": "1.0.0",
+  "description": "Skill brasileira para agentes de IA: escolhe, constrói e aplica a paleta de cores de qualquer site em UM arquivo espelho (OKLCH + contraste WCAG). Comando /color.",
+  "bin": {
+    "omni-color-skill": "bin/color.js",
+    "omni-color": "bin/color.js"
+  },
+  "scripts": {
+    "start": "node bin/color.js"
+  },
+  "keywords": [
+    "ai",
+    "skill",
+    "agent-skill",
+    "brazil",
+    "color-palette",
+    "oklch",
+    "wcag",
+    "design-tokens",
+    "dark-mode",
+    "tailwind",
+    "claude",
+    "antigravity",
+    "cursor",
+    "windsurf",
+    "pt-br"
+  ],
+  "author": "LimaEdu-7x",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimaEdu-7x/omni-color.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LimaEdu-7x/omni-color/issues"
+  },
+  "homepage": "https://github.com/LimaEdu-7x/omni-color#readme",
+  "engines": {
+    "node": ">=16.7"
+  },
+  "files": [
+    "SKILL.md",
+    "bin",
+    "references",
+    "scripts",
+    "bundled",
+    "docs",
+    "THIRD_PARTY_NOTICES.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}

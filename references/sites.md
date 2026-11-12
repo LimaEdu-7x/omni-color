@@ -27,4 +27,4 @@ Abra o site e traga o resultado de volta como hex para os seeds do `palette.json
 - Tem foto/logo → #5 para extrair, fique com 1 primária + 1 acento, descarte o resto.
 - Checar modo escuro → #8 e #10.
 - Gráficos → só #13.
-- Pixel art/retrô → #15, depois entregue o `.hex` à skill `omni-sprite`.
+- Pixel art/retrô → #15, depois entregue o `.hex` à skill `/sprite`.

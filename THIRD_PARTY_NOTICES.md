@@ -1,7 +1,7 @@
 # Créditos e avisos de terceiros
 
 ## grill-me (skill incluída)
-`skills/grill-me/SKILL.md` é uma cópia sem alterações (em inglês, como no original) da skill **grilling** (o motor do "/grill-me") criada por **Matt Pocock**.
+`bundled/grill-me/SKILL.md` é uma cópia sem alterações (em inglês, como no original) da skill **grilling** (o motor do "/grill-me") criada por **Matt Pocock**.
 Origem: https://github.com/mattpocock/skills (também https://www.aihero.dev). Dê uma estrela e siga o projeto original.
 
 ```
@@ -29,7 +29,7 @@ SOFTWARE.
 ```
 
 ## Skills da comunidade analisadas (só ideias, nenhum código copiado)
-O design foi informado por uma leitura crítica de: artistic-color-palettes (youssef4laa), color-palette-extractor (OneWave-AI), skill.color-expert (meodai), color-palette (jezweb), color-palette (NickCrew), algorithmic-color-palette (dembrandt). Veja `skills/omni-color/references/integrations.md`.
+O design foi informado por uma leitura crítica de: artistic-color-palettes (youssef4laa), color-palette-extractor (OneWave-AI), skill.color-expert (meodai), color-palette (jezweb), color-palette (NickCrew), algorithmic-color-palette (dembrandt). Veja `references/integrations.md`.
 
 ## Ciência da cor
 OKLab/OKLCH de **Björn Ottosson** (https://bottosson.github.io/posts/oklab/); fórmula de contraste WCAG 2 do W3C.
